@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Navbar Oculta com Scroll</title>
+<style>
+  /* Estilos para o header */
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    z-index: 1000;
+    transition: top 0.3s;
+  }
+
+  /* Quando o usuário rolar para baixo, a barra de navegação ficará oculta */
+  header.hidden {
+    top: -50px; /* altura da barra de navegação */
+  }
+
+  /* Estilos para a barra de navegação */
+  nav {
+    text-align: center;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* Conteúdo adicional apenas para tornar a página rolável */
+  #content {
+    height: 2000px;
+    margin-top: 50px; /* compensa a altura do header */
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header id="header">
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Conteúdo da Página -->
+<div id="content">
+  <h1>Navbar Oculta com Scroll</h1>
+  <p>Role a página para baixo para ocultar a barra de navegação e para cima para mostrar novamente.</p>
+  <!-- Adicione mais conteúdo aqui, se desejar -->
+</div>
+
+<!-- JavaScript para controlar a visibilidade da barra de navegação -->
+<script>
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    var header = document.getElementById("header");
+    
+    if (prevScrollpos > currentScrollPos) {
+      header.classList.remove("hidden");
+    } else {
+      header.classList.add("hidden");
+    }
+    prevScrollpos = currentScrollPos;
+  }
+</script>
+
+</body>
+</html>

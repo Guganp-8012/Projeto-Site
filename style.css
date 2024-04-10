@@ -1,0 +1,263 @@
+/*Font Person Configs*/
+
+@font-face {
+    font-family: 'Staatliches';
+    src: url('assets/fonts/Staatliches-Regular.ttf') format('ttf'),
+    url('assets/fonts/Staatliches-Regular.woff2') format('woff2'),
+    url('assets/fonts/Staatliches-Regular.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Fugaz-One';
+    src: url('assets/fonts/FugazOne-Regular.ttf') format('ttf'),
+    url('assets/fonts/FugazOne-Regular.woff') format('woff2'),
+    url('assets/fonts/FugazOne-Regular.woff') format('woff');
+}
+
+/*Reset Configs*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: Staatliches, Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --background-color: #F5F5F5;
+    --text-color: '#000';
+    --line-color: '#000';
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+main{
+    background-image: url(assets/images/Elementos-forma-cut.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/*Header Configs*/
+
+header{
+    background-color: #DFDFDF;
+}
+
+.header-middle-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 35px 0px 25px 0px;
+}
+
+.logo{
+    margin: 0px 75px;
+}
+
+/*Search Configs*/
+
+.header-search{
+    margin-right: auto;
+    height: 50px;
+    width: 342px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+
+.search:focus-within {
+    outline: 2px solid #1C1B1F;
+    border-radius: 15px;
+    outline-offset: 2px;
+  }
+
+.search input[type="text"]{
+    background-color: #b7b7b7;
+    border: none;
+    height: 100%;
+    width: 320px;
+    border-radius: 15px 0 0px 15px;
+    padding: 0px 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search button{
+    background-color: #b7b7b7;
+    border: none;
+    height: 100%;
+    padding: 0px 11px;
+    border-radius: 0px 15px 15px 0px;
+}
+
+/*"Shopping" Configs*/
+
+.header-shopping{
+    display: flex;
+    flex-direction: row;
+    margin-right: 75px;
+    font-size: 36px;
+    column-gap: 22px;
+}
+
+.header-shopping-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-shopping-section a{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+/*Nav Configs*/
+
+nav{
+    display: inline-block;
+    width: 100%;
+    background-color: #000;
+    font-size: 26px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav li{
+    display: inline-block;
+}
+
+nav a{
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    color: #f5f5f5;
+    padding: 17px 11px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Dropdown Configs*/
+
+.dropdown-menu{
+    position: absolute;
+    border: 1px solid #000;
+    background-color: rgb(255, 244, 224);
+    display: none;
+}
+.dropdown-menu a{
+    color: #000;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/* lembrar de estilizar a barra de rolagem */
+
+.linha-divisao{
+    display: flex;
+    width: 1480px;
+    height: 5px;
+    border-radius: 30px;
+    background-color: var(--line-color);
+    margin: 0px auto;
+    /*    
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    */
+}
+
+.previa{
+    display: flex;
+    flex-direction: row;
+    font-size: 26px;
+    margin: 80px 160px;
+    align-items: center;
+    column-gap: 90px;
+}
+
+.previa-texto div{
+    font-size: 30px;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 24px;
+    padding-top: 70px;
+}
+
+.previa button{
+    width: 225px;
+    height: 98px;
+    font-size: 38px;
+    background: linear-gradient(45deg, #6C1021, #BF203D, #E42983);
+    border-radius: 20px;
+    color: #ffffff;
+    box-shadow: -5px 4px 3px rgba(153, 153, 153, 0.65);
+    border: none;
+    outline: 1px solid #d3d3d3; 
+    text-shadow: -3px 4px 3px #000;
+    font-family: Fugaz-One;
+}
+
+.descricao h1{
+    color: #E14320; 
+}
+
+footer div{
+    background-color: #000;
+}
+
+footer{
+    background-color: #B7B7B7;
+}
+
+.img-icon{
+    height: 38px;
+}
+
+.extra-icon1{
+    position: absolute;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.extra-icon1 label{
+    height: 40px;
+    width: 40px;
+}
+
+.theme-on-off{
+    display: none;
+}
+
+.extra-icon2{
+    position: absolute;
+    right: 18px;
+}
+
+.texto-sombra{
+    text-shadow: -3px 4px 3px rgba(153, 153, 153, 0.65);
+}
