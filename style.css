@@ -25,11 +25,22 @@
     font-family: Staatliches, Arial, Helvetica, sans-serif;
 }
 
+/*Root Configs*/
+
 :root{
     --background-color: #F5F5F5;
     --text-color: '#000';
-    --line-color: '#000';
+    --header-color: '#000';
 }
+
+/*
+(dark theme palette)
+    --background-color: #10181E;
+    --text-color: '#F5F5f5';
+    --header-color: '#DFDFDF';
+*/
+
+/*Body-Main Configs*/
 
 body{
     display: flex;
@@ -45,10 +56,14 @@ main{
     background-repeat: no-repeat;
 }
 
+.main-content{
+    margin: 0px 160px;
+}
+
 /*Header Configs*/
 
 header{
-    background-color: #DFDFDF;
+    background-color: var(--header-color);
 }
 
 .header-middle-container{
@@ -124,7 +139,7 @@ header{
 
 .header-shopping-section a{
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    color: var(--text-color);
 }
 
 /*Nav Configs*/
@@ -132,7 +147,7 @@ header{
 nav{
     display: inline-block;
     width: 100%;
-    background-color: #000;
+    background-color: var(--text-color);
     font-size: 26px;
 }
 
@@ -178,7 +193,7 @@ nav a{
     width: 1480px;
     height: 5px;
     border-radius: 30px;
-    background-color: var(--line-color);
+    background-color: var(--text-color);
     margin: 0px auto;
     /*    
     position: absolute;
@@ -192,7 +207,7 @@ nav a{
     display: flex;
     flex-direction: row;
     font-size: 26px;
-    margin: 80px 160px;
+    margin: 80px 0px;
     align-items: center;
     column-gap: 90px;
 }
@@ -220,9 +235,36 @@ nav a{
     font-family: Fugaz-One;
 }
 
-.descricao h1{
-    color: #E14320; 
+/*Desc Configs*/
+
+.descricao{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 600px;
+    border: 10px solid #6C1021;
+    column-gap: 20px;
 }
+
+.descricao div{
+    padding-right: 18px;
+}
+
+.img-desc{
+    width: 500px;
+    height: auto;
+}
+
+.descricao h1{
+    color: #E14320;
+    font-size: 56px;
+}
+
+.descricao p{
+    font-size: 32px;
+}
+
+/*Footer Configs*/
 
 footer div{
     background-color: #000;
