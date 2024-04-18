@@ -1,20 +1,18 @@
-/*Font Person Configs*/
+/* ---------- Font Person ---------- */
 
-@font-face {
-    font-family: 'Staatliches';
-    src: url('assets/fonts/Staatliches-Regular.ttf') format('ttf'),
-    url('assets/fonts/Staatliches-Regular.woff2') format('woff2'),
-    url('assets/fonts/Staatliches-Regular.woff') format('woff');
+.fugaz-one-regular {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-@font-face {
-    font-family: 'Fugaz-One';
-    src: url('assets/fonts/FugazOne-Regular.ttf') format('ttf'),
-    url('assets/fonts/FugazOne-Regular.woff') format('woff2'),
-    url('assets/fonts/FugazOne-Regular.woff') format('woff');
+.staatliches-regular {
+font-family: "Staatliches", sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
-/*Reset Configs*/
+/* ---------- Simple Reset ---------- */
 
 * {
     padding: 0px;
@@ -24,23 +22,26 @@
     list-style: none;
     font-family: Staatliches, Arial, Helvetica, sans-serif;
 }
-
-/*Root Configs*/
-
-:root{
+/* ---------- Data Info ---------- */
+/*  */
+[data-theme="light"] {
     --background-color: #F5F5F5;
-    --text-color: '#000';
-    --header-color: '#000';
+    --text-color: #171717;
+    --header-bkg-color: #DFDFDF;
+    --nav-color: #000;
+    --shadow-color: rgba(153, 153, 153, 0.65);
 }
 
-/*
-(dark theme palette)
-    --background-color: #10181E;
-    --text-color: '#F5F5f5';
-    --header-color: '#DFDFDF';
-*/
+[data-theme="dark"] {
+    --background-color: #080C0F;
+    --text-color: #F5F5f5;
+    --header-bkg-color: #000;
+    --nav-color: #F5F5F5;
+    --shadow-color: rgba(0, 0, 0, 0.70);
+}
 
-/*Body-Main Configs*/
+/* ---------- Font Person ---------- */
+/*Body-Main*/
 
 body{
     display: flex;
@@ -51,19 +52,20 @@ body{
 }
 
 main{
-    background-image: url(assets/images/Elementos-forma-cut.png);
+    background-image: url(/assets/images/Elementos-forma-cut.png);
     background-size: cover;
     background-repeat: no-repeat;
+    text-shadow: -2px 3px 3px var(--shadow-color);
 }
 
 .main-content{
     margin: 0px 160px;
 }
-
-/*Header Configs*/
+/* ---------- Font Person ---------- */
+/*Header*/
 
 header{
-    background-color: var(--header-color);
+    background-color: var(--header-bkg-color);
 }
 
 .header-middle-container{
@@ -71,13 +73,14 @@ header{
     flex-direction: row;
     align-items: center;
     padding: 35px 0px 25px 0px;
+
 }
 
 .logo{
     margin: 0px 75px;
 }
-
-/*Search Configs*/
+/* ---------- Font Person ---------- */
+/*Search*/
 
 .header-search{
     margin-right: auto;
@@ -114,14 +117,17 @@ header{
 }
 
 .search button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: #b7b7b7;
     border: none;
     height: 100%;
     padding: 0px 11px;
     border-radius: 0px 15px 15px 0px;
 }
-
-/*"Shopping" Configs*/
+/* ---------- Font Person ---------- */
+/*"Shopping"*/
 
 .header-shopping{
     display: flex;
@@ -139,15 +145,15 @@ header{
 
 .header-shopping-section a{
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
+    color: var(--nav-color);
 }
-
-/*Nav Configs*/
+/* ---------- Font Person ---------- */
+/*Nav*/
 
 nav{
     display: inline-block;
     width: 100%;
-    background-color: var(--text-color);
+    background-color: var(--nav-color);
     font-size: 26px;
 }
 
@@ -165,12 +171,12 @@ nav a{
     display: flex;
     align-items: center;
     column-gap: 4px;
-    color: #f5f5f5;
     padding: 17px 11px;
     font-family: Arial, Helvetica, sans-serif;
+    color: var(--header-bkg-color);
 }
-
-/*Dropdown Configs*/
+/* ---------- Font Person ---------- */
+/*Dropdown*/
 
 .dropdown-menu{
     position: absolute;
@@ -186,33 +192,21 @@ nav a{
     display: block;
 }
 
+/* ---------- Font Person ---------- */
 /* lembrar de estilizar a barra de rolagem */
 
-.linha-divisao{
-    display: flex;
-    width: 1480px;
-    height: 5px;
-    border-radius: 30px;
-    background-color: var(--text-color);
-    margin: 0px auto;
-    /*    
-    position: absolute;
-    left: 50%;
-    right: 50%;
-    transform: translate(-50%, -50%);
-    */
-}
+/*Hero*/
 
-.previa{
+.hero{
     display: flex;
     flex-direction: row;
     font-size: 26px;
-    margin: 80px 0px;
+    margin: 70px 0px;
     align-items: center;
-    column-gap: 90px;
+    column-gap: 110px;
 }
 
-.previa-texto div{
+.hero-text div{
     font-size: 30px;
     display: inline-flex;
     flex-direction: row;
@@ -221,41 +215,54 @@ nav a{
     padding-top: 70px;
 }
 
-.previa button{
+.little-text-sla{
+    color: #757575;
+    text-shadow: none;
+}
+
+.hero h1{
+    color: #E14320;
+}
+
+.hero img{
+    box-shadow: -4px 4px 4px var(--shadow-color);
+    border-radius: 22px;
+    height: 600px;
+    width: auto;
+}
+
+.hero button{
     width: 225px;
     height: 98px;
     font-size: 38px;
     background: linear-gradient(45deg, #6C1021, #BF203D, #E42983);
     border-radius: 20px;
     color: #ffffff;
-    box-shadow: -5px 4px 3px rgba(153, 153, 153, 0.65);
+    box-shadow: -5px 4px 3px var(--shadow-color);
     border: none;
     outline: 1px solid #d3d3d3; 
     text-shadow: -3px 4px 3px #000;
-    font-family: Fugaz-One;
+    font-family: Fugaz One;
 }
 
-/*Desc Configs*/
+/*Descrição*/
 
 .descricao{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 600px;
-    border: 10px solid #6C1021;
-    column-gap: 20px;
 }
 
 .descricao div{
-    padding-right: 18px;
+    padding: 90px;
 }
 
 .img-desc{
-    width: 500px;
-    height: auto;
+    width: auto;
+    height: 500px;
 }
 
-.descricao h1{
+.descricao h3{
     color: #E14320;
     font-size: 56px;
 }
@@ -264,35 +271,34 @@ nav a{
     font-size: 32px;
 }
 
-/*Footer Configs*/
+/*Footer*/
 
 footer div{
     background-color: #000;
+    color: white;
 }
 
 footer{
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #B7B7B7;
-}
-
-.img-icon{
-    height: 38px;
 }
 
 .extra-icon1{
     position: absolute;
     left: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
-.extra-icon1 label{
-    height: 40px;
-    width: 40px;
+.extra-icon1 span{
+    font-size: 38px;
 }
 
-.theme-on-off{
+#themeCheckbox {
     display: none;
+}
+
+label[for="themeCheckbox"] {
+    cursor: pointer;
 }
 
 .extra-icon2{
@@ -300,6 +306,28 @@ footer{
     right: 18px;
 }
 
-.texto-sombra{
-    text-shadow: -3px 4px 3px rgba(153, 153, 153, 0.65);
+.mais-desc p{
+    color: #DE163A;
+}
+
+.material-symbols-outlined {
+    font-size: 38px;
+    color: var(--header-bkg-color);
+}
+
+#scrollToTopButton {
+    display: none; /* Ocultar o botão inicialmente */
+    position: fixed; /* Fixar o botão no canto inferior direito */
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#scrollToTopButton:hover {
+    background-color: #555;
 }

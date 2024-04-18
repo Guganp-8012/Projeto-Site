@@ -1,36 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR" data-theme="light">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Rail Rush</title>
-        <link rel="stylesheet" href="style.css">
+        <meta name="description" content="Somos uma marca especializada no segmento Skate e Streetwear que busca levar o máximo qualidade e satisfação para nossos clientes.">
+        <title>RailRush | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=Staatliches&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+        <link rel="stylesheet" href="styles.css">
     </head>
 
     <body>
         <header>
             <div class="header-middle-container">
-                <img class="logo" src="assets/logo/logo light.png" width="auto" height="50">
+                <img class="logo" src="/assets/logo/logo light.png" width="auto" height="50">
 
                 <div class="header-search">
                     <form class="search" action="/search" method="get">
-                        <input type="text" name="q" placeholder="Pesquisar">
+                        <input type="text" placeholder="Pesquisar">
 
                         <button type="submit">
-                            <img class="img-icon" src="assets/icons/search.svg">
+                            <img class="img-icon" src="/assets/icons/search.svg">
                         </button>
                     </form>
                 </div>
                 
                 <div class="header-shopping">
                     <div class="header-shopping-section">
-                        <img class="img-icon" src="assets/icons/store.svg">
+                        <img class="img-icon" src="/assets/icons/store.svg">
 
                         <a href="#">Loja</a>
                     </div>
 
                     <div class="header-shopping-section">
-                        <img class="img-icon" src="assets/icons/session.svg">
+                        <img class="img-icon" src="/assets/icons/session.svg">
 
                         <a href="#">Iniciar sessão</a>
                     </div>
@@ -40,58 +45,60 @@
             <nav>
                 <ul>
                     <li class="extra-icon1">
-                        <label for="theme">
-                            <img src="assets/icons/theme.svg" width="40">
+                        <input type="checkbox" id="themeCheckbox">
+                
+                        <label for="themeCheckbox">
+                            <span class="material-symbols-outlined">contrast</span>
                         </label>
-
-                        <input type="checkbox" name="theme" id="theme" class="theme-on-off">
                     </li>
                     
                     <li>
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/home.svg">
+                            <span class="material-symbols-outlined">
+                                house
+                            </span>
                             Home
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/about.svg" alt="">
+                            <img class="img-icon" src="/assets/icons/about.svg" alt="">
                             Sobre
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/news.svg" alt="">
+                            <img class="img-icon" src="/assets/icons/news.svg" alt="">
                             Noticias
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/community.svg" alt="">
+                            <img class="img-icon" src="/assets/icons/community.svg" alt="">
                             Comunidade
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/help.svg" alt="">
+                            <img class="img-icon" src="/assets/icons/help.svg" alt="">
                             FAQ
                         </a>
                     </li>
 
                     <li>
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/contact.svg" alt="">
+                            <img class="img-icon" src="/assets/icons/contact.svg" alt="">
                             Contato
                         </a>
                     </li>
 
                     <li class="dropdown">
                         <a href="#">
-                            <img class="img-icon" src="assets/icons/more.svg" alt="">
+                            <img class="img-icon" src="/assets/icons/more.svg" alt="">
                             Mais
                         </a>
                         
@@ -103,7 +110,7 @@
                     </li>
 
                     <a class="extra-icon2" href="#">
-                        <img src="assets/icons/settings.svg" width="40">
+                        <img src="/assets/icons/settings.svg" width="40">
                     </a>
                 </ul>                
             </nav>
@@ -111,11 +118,21 @@
 
         <main>
             <div class="main-content">
-                <div class="previa">
-                    <div class="previa-texto texto-sombra">
+                <div class="hero">
+                    <div class="hero-text">
+                        <span class="little-text-sla">
+                            Confiança e Originalidade
+                        </span>
+
                         <h1>
-                            Somos uma marca especializada no segmento Skate e Streetwear que busca levar o máximo qualidade e satisfação para nossos clientes. Apenas a loja virtual está disponível por enquanto. Trabalhamos com as melhores marcas do mercado.
+                            Destaque-se na Cena: Nosso Skate, Seu Estilo!
                         </h1>
+
+                        <hr>
+
+                        <h2>
+                            Sua marca especializada no segmento Skate e streetwear buscamos levar o máximo qualidade e satisfação para nossos clientes. Apenas a loja virtual está disponível por enquanto. Trabalhamos com as melhores marcas do mercado.
+                        </h2>
 
                         <div>
                             <button>
@@ -123,21 +140,21 @@
                             </button>
 
                             <span>
-                                Explore nossos produtos e mergulhe no universo do  streetwear. Seja bem-vindo(a) à nossa comunidade!
+                                Explore nossos produtos e mergulhe no universo do streetwear. <br> Seja bem-vindo(a) à nossa comunidade!
                             </span>
                         </div>
                     </div>
 
-                    <img src="assets/images/img-inicio.png" height="600" width="auto">
+                    <img src="/assets/images/img-inicio.png">
                 </div>
 
-                <div class="linha-divisao"></div>
+                <hr>
 
                 <div class="descricao">
-                    <img src="https://raw.githubusercontent.com/Guganp-8012/Projeto-Site/master/assets/images/loja-desc.png" width="600" height="auto">
+                    <img class="img-desc" src="/assets/images/loja-desc.png">
 
                     <div class="texto-sombra">
-                        <h1>Conheça nossa loja!</h1>
+                        <h3>Conheça nossa loja!</h3>
 
                         <p>
                             Explore a nossa loja e encontre os melhores produtos para skatistas de  todos os níveis. De decks e trucks a roupas e acessórios, oferecemos uma  seleção cuidadosamente selecionada dos melhores equipamentos de skate  para você se destacar no seu próximo rolê.
@@ -146,22 +163,22 @@
                 </div>
 
                 <div class="descricao">
-                    <img class="img-desc" src="assets/images/noticia-desc.png" alt="">
-
                     <div class="texto-sombra">
-                        <h1>Fique por dentro!</h1>
+                        <h3>Fique por dentro!</h3>
 
                         <p>
                             Veja as últimas notícias e atualizações do mundo do skate. Mantenha-se informado sobre os eventos, competições, lançamentos de  produtos e muito mais. Não perca nenhum detalhe do que está acontecendo  no universo do skate.
                         </p>
                     </div>
+
+                    <img class="img-desc" src="/assets/images/noticia-desc.png" alt="">
                 </div>
 
                 <div class="descricao">
-                    <img class="img-desc" src="assets/images/comunidade-desc.png" alt="">
+                    <img class="img-desc" src="/assets/images/comunidade-desc.png" alt="">
 
                     <div class="texto-sombra">
-                        <h1>Faça parte da comunidade!</h1>
+                        <h3>Faça parte da comunidade!</h3>
 
                         <p>
                             Conecte-se com skatistas de todo o  mundo, compartilhe suas experiências, fotos e vídeos, e participe de  discussões animadas sobre tudo relacionado ao skate. Juntos, celebramos a  paixão pelo skate e promovemos a inclusão em nossa comunidade.
@@ -170,28 +187,28 @@
                 </div>
 
                 <div class="descricao">
-                    <img class="img-desc" src="assets/images/sobre-desc-placeholder.png">
-
                     <div class="texto-sombra">
-                        <h1>Sobre nós e nossa missão!</h1>
+                        <h3>Sobre nós e nossa missão!</h3>
 
                         <p>
                             Saiba mais sobre a Rail Rush. Descubra nossa missão, valores e a história por trás da nossa paixão pelo skate. Junte-se a nós enquanto exploramos o universo do skate e celebramos sua diversidade e inclusão.
                         </p>
                     </div>
+
+                    <img class="img-desc" src="/assets/images/sobre-desc-placeholder.png">
                 </div>
 
-                <div class="descricao">
-                    <img class="img-desc" src="assets/images/mais-desc.png" alt="">
+                <div class="mais-desc"> <!--debugar!-->
+                    <img class="img-desc" src="/assets/images/mais-desc.png" alt="">
 
                     <div class="texto-sombra">
-                        <h1>
+                        <h4>
                             Descubra muito mais Explorando nossos recursos adicionais, como informações sobre atletas de destaque, dicas e tutoriais de skate, recursos educacionais e muito mais.
-                        </h1>
+                        </h4>
 
-                        <h2 style="color: #DE163A;">
+                        <p>
                             Entre na vibe conosco e aproveite nosso site de todas as formas!
-                        </h2>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -202,7 +219,14 @@
                 olá mundo
             </div>
 
-            &copy; Todos os direitos reservados - Criado por Guganp
+            &copy; 2024 Todos os direitos reservados | Ideia criada por: Guganp-8012  | Créditos extras &lt- clique aqui
+
+            <footer>
+                <!-- Conteúdo do footer -->
+                <button id="scrollToTopButton" title="Voltar ao Topo">
+                    <span class="material-symbols-outlined">arrow_warm_up</span>
+                </button>
+            </footer>            
         </footer>
     </body>
 

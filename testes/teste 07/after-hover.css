@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    background: #000;
+    height: 100vh;
+    font-family: "Montserrat", sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #5edfff;
+    transition: .5s ease-out;
+}
+
+a:hover::after {
+    width: 100%;
+}

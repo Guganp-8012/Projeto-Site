@@ -1,51 +1,22 @@
-window.onload = function() {
-    getThemeFromLocalStorage()
+// Função para alternar entre os temas e armazenar a preferência do usuário no localStorage
+function toggleDarkMode() {
+  const root = document.documentElement;
+  if (root.id === 'darkmode') {
+      root.id = '';
+      localStorage.removeItem('theme');
+  } else {
+      root.id = 'darkmode';
+      localStorage.setItem('theme', 'dark');
   }
-  
-  const rootElement = document.documentElement
-  const inputContainer = document.querySelector('.theme-on-off')
-  
-  const lightTheme = {
-    '--background-color': '#F5F5F5',
-    '--text-color': '#000',
+}
+
+// Verifica se há uma preferência de tema armazenada no localStorage ao carregar a página
+document.addEventListener('DOMContentLoaded', function() {
+  const theme = localStorage.getItem('theme');
+  if (theme === 'dark') {
+      document.documentElement.id = 'darkmode';
   }
-  
-  const darkTheme = document.getElementById('darkmode:root')
-  
-  inputContainer.addEventListener('change', function() {
-    const isChecked = inputContainer.checked
-    if (isChecked) {
-        changeTheme(darkTheme)
-    } else {
-        changeTheme(lightTheme)
-    }
-  })
-  
-  function changeTheme(theme) {
-    for (let prop in theme) {
-        changeProperty(prop, theme[prop])
-    }
-    saveThemeToLocalStorage(theme)
-  }
-  
-  function changeProperty(property, value) {
-    rootElement.style.setProperty(property, value)
-  }
-  
-  function saveThemeToLocalStorage(theme) {
-    localStorage.setItem('theme', JSON.stringify(theme))
-  }
-  
-  function getThemeFromLocalStorage() {
-    const theme = JSON.parse(localStorage.getItem('theme'))
-    changeTheme(theme)
-    if (isThemeEqual(theme, darkTheme)) inputContainer.checked = true
-  }
-  
-  function isThemeEqual(firstTheme, secondTheme) {
-    for (let prop in firstTheme) {
-        if (firstTheme[prop] !== secondTheme[prop]) return false
-    }
-    return true
-  }
-  
+});
+
+// Adiciona um evento de clique ao botão de alternar tema
+document.getElementById('theme-toggle').addEventListener('click', toggleDarkMode);

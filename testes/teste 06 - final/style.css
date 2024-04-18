@@ -1,0 +1,36 @@
+/* Tema claro */
+[data-theme="light"] {
+    --background-color: #FFFFFF;
+    --text-color: #000000;
+}
+
+/* Tema escuro */
+[data-theme="dark"] {
+    --background-color: #121212;
+    --text-color: #FFFFFF;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.extra-icon1{
+    background-color: var(--text-color);
+}
+
+/* Esconder o checkbox */
+#themeCheckbox {
+    display: none;
+}
+
+/* Estilizar a imagem como o rótulo do checkbox */
+label[for="themeCheckbox"] {
+    cursor: pointer;
+}
+
+/* Estilizar a imagem quando o checkbox está marcado */
+#themeCheckbox:checked + label img {
+    border: 2px solid blue; /* Exemplo de estilo */
+}
+

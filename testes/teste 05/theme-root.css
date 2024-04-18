@@ -6,13 +6,9 @@
 :root{
     --background-color: #ffffff;
     --text-color: #000000;
-    --background-color: #000000;
-    --text-color: #ffffff;
 }
 
 #darkmode:root{
-    --background-color: #ffffff;
-    --text-color: #000000;
     --background-color: #000000;
     --text-color: #ffffff;
 }
@@ -23,16 +19,6 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    color: var(--cor-do-texto);
-    background-color: var(--cor-de-fundo);
-}
-
-button{
-    margin: 2rem 0;
-    padding: 0.75rem 2rem;
-    background: var(--cor-de-fundo-do-botao);
-    color: var(--cor-do-texto);
-    border: none;
-    font-weight: bold;
-    border-radius: 1rem;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
