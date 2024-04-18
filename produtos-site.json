@@ -1,0 +1,81 @@
+[
+    {
+      "id": 1,
+      "img": ["https://acdn.mitiendanube.com/stores/087/236/products/1-8f00ef1a1f32b2e92f17011837810227-1024-1024.webp", 
+	  			"https://acdn.mitiendanube.com/stores/087/236/products/2-f0c28a81493f64465017011837810464-1024-1024.webp"],
+      "nome": "lorem ipsum",
+      "descricao": "lorem ipsum",
+      "valorSemDesconto": 0.0,
+      "valorComDesconto": 0.0
+    },
+
+    {
+        "id": 2,
+        "img": ["https://images.tcdn.com.br/img/img_prod/921115/bone_dc_shoes_transfer_2_preto_12985_1_32d7443066c3b7fc85494c2fdbfe5cdf.jpg", 
+				"https://images.tcdn.com.br/img/img_prod/921115/bone_dc_shoes_transfer_2_preto_12985_2_4c49db39eae1e5206c0a8a2a52075066.jpg"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    },
+
+	{
+        "id": 3,
+        "img": ["https://images.tcdn.com.br/img/img_prod/921115/moletom_dc_shoes_star_preto_6613_1_a6c60adc803709e340092ff3474b6f9e_20220707170859.jpg",
+				"https://images.tcdn.com.br/img/img_prod/921115/moletom_dc_shoes_star_preto_6613_2_f54580654e5281580cad3847c77bf102_20220707170917.jpg"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    },
+
+	{
+        "id": 4,
+        "img": ["https://images.tcdn.com.br/img/img_prod/921115/camiseta_dc_shoes_super_transfer_branca_3471_1_6eebfe43b1d119ed012293680a611074_20220707170425.jpg"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    },
+
+	{
+        "id": 5,
+        "img": ["https://images.tcdn.com.br/img/img_prod/921115/camiseta_thrasher_double_flame_logo_neon_preta_15423_1_0e82bbf0f2d1de5ab0fd02b6413d4505.jpg", 
+				"https://images.tcdn.com.br/img/img_prod/921115/camiseta_thrasher_double_flame_logo_neon_preta_15423_2_473877fbd7fa2a54cac87742bec89cca.jpg"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    },
+
+	{
+        "id": 6,
+        "img": ["https://images.tcdn.com.br/img/img_prod/921115/camiseta_vans_off_the_wall_classic_white_14353_1_b5eede028c46dd402cdc15ad14fcc761.jpg", 
+				"https://images.tcdn.com.br/img/img_prod/921115/camiseta_vans_off_the_wall_classic_white_14353_2_8da36a8cd6a12c15bf958590024b055a.jpg"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    },
+
+	{
+        "id": 7,
+        "img": ["https://acdn.mitiendanube.com/stores/002/099/440/products/1131-e08fb12d09490537f016910926646994-1024-1024.webp", 
+				"https://images.tcdn.com.br/img/img_prod/680926/tenis_ous_imigrante_essencial_preto_laranja_18515_4_b9838c7db1cb26a4041563b26e9c8be0.jpg"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    },
+
+	{
+        "id": 8,
+        "img": ["https://acdn.mitiendanube.com/stores/087/236/products/3-cf12a8b8689039715e17121631567673-1024-1024.webp", 
+				"https://acdn.mitiendanube.com/stores/087/236/products/diamond-luzeszz-876006ace2a546ef3217032813915628-1024-1024.webp",
+				"https://acdn.mitiendanube.com/stores/087/236/products/lixa-4f6783ffbfa34f600c17121631453876-1024-1024.webp"],
+        "nome": "lorem ipsum",
+        "descricao": "lorem ipsum",
+        "valorSemDesconto": 0.0,
+        "valorComDesconto": 0.0
+    }
+]

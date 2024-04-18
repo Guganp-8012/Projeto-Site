@@ -7,9 +7,9 @@
 }
 
 .staatliches-regular {
-font-family: "Staatliches", sans-serif;
-font-weight: 400;
-font-style: normal;
+    font-family: "Staatliches", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 /* ---------- Simple Reset ---------- */
@@ -22,12 +22,13 @@ font-style: normal;
     list-style: none;
     font-family: Staatliches, Arial, Helvetica, sans-serif;
 }
+
 /* ---------- Data Info ---------- */
-/*  */
+
 [data-theme="light"] {
     --background-color: #F5F5F5;
     --text-color: #171717;
-    --header-bkg-color: #DFDFDF;
+    --header-bkg-color: #dfdfdf;
     --nav-color: #000;
     --shadow-color: rgba(153, 153, 153, 0.65);
 }
@@ -39,9 +40,7 @@ font-style: normal;
     --nav-color: #F5F5F5;
     --shadow-color: rgba(0, 0, 0, 0.70);
 }
-
-/* ---------- Font Person ---------- */
-/*Body-Main*/
+/* ---------- Body-Main ---------- */
 
 body{
     display: flex;
@@ -52,17 +51,16 @@ body{
 }
 
 main{
-    background-image: url(/assets/images/Elementos-forma-cut.png);
+    background-image: url(assets/images/Elementos-forma-cut.png);
     background-size: cover;
     background-repeat: no-repeat;
     text-shadow: -2px 3px 3px var(--shadow-color);
 }
 
 .main-content{
-    margin: 0px 160px;
+    padding: 0px 160px;
 }
-/* ---------- Font Person ---------- */
-/*Header*/
+/* ---------- Header ---------- */
 
 header{
     background-color: var(--header-bkg-color);
@@ -78,9 +76,11 @@ header{
 
 .logo{
     margin: 0px 75px;
+    width: auto;
+    height: 50px;
 }
-/* ---------- Font Person ---------- */
-/*Search*/
+
+/* ---------- Search ---------- */
 
 .header-search{
     margin-right: auto;
@@ -126,8 +126,7 @@ header{
     padding: 0px 11px;
     border-radius: 0px 15px 15px 0px;
 }
-/* ---------- Font Person ---------- */
-/*"Shopping"*/
+/* ---------- Shopping ---------- */
 
 .header-shopping{
     display: flex;
@@ -137,18 +136,14 @@ header{
     column-gap: 22px;
 }
 
-.header-shopping-section{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-shopping-section a{
+.header-shopping a{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--nav-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
-/* ---------- Font Person ---------- */
-/*Nav*/
+/* ---------- Nav ---------- */
 
 nav{
     display: inline-block;
@@ -175,27 +170,26 @@ nav a{
     font-family: Arial, Helvetica, sans-serif;
     color: var(--header-bkg-color);
 }
-/* ---------- Font Person ---------- */
-/*Dropdown*/
+
+/* ---------- Dropdown ---------- */
 
 .dropdown-menu{
     position: absolute;
-    border: 1px solid #000;
-    background-color: rgb(255, 244, 224);
+    background-color: var(--nav-color);
     display: none;
+    border-radius: 0px 0px 8px 8px;
 }
 .dropdown-menu a{
-    color: #000;
+    color: var(--header-bkg-color);
 }
 
 .dropdown:hover .dropdown-menu{
     display: block;
 }
 
-/* ---------- Font Person ---------- */
 /* lembrar de estilizar a barra de rolagem */
 
-/*Hero*/
+/* ---------- Hero ---------- */
 
 .hero{
     display: flex;
@@ -245,7 +239,7 @@ nav a{
     font-family: Fugaz One;
 }
 
-/*Descrição*/
+/* ---------- Descrição ---------- */
 
 .descricao{
     display: flex;
@@ -271,26 +265,44 @@ nav a{
     font-size: 32px;
 }
 
-/*Footer*/
-
-footer div{
-    background-color: #000;
-    color: white;
+.mais-desc{
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
 }
+
+.mais-desc div{
+    padding: 90px;
+}
+
+.mais-desc h4{ 
+    font-size: 30px;
+}
+
+.mais-desc p{
+    color: #DE163A;
+    font-size: 28px;
+}
+
+/* ---------- Footer ---------- */
 
 footer{
+    display: flex;
+    flex-direction: row;
     justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #B7B7B7;
+    padding: 5px 0px 5px 0px;
+    font-size: 18px;
+    color: #000;
 }
+
+/* ---------- Icon+Checkbox ---------- */
 
 .extra-icon1{
     position: absolute;
     left: 18px;
-}
-
-.extra-icon1 span{
-    font-size: 38px;
 }
 
 #themeCheckbox {
@@ -306,18 +318,20 @@ label[for="themeCheckbox"] {
     right: 18px;
 }
 
-.mais-desc p{
-    color: #DE163A;
-}
-
 .material-symbols-outlined {
     font-size: 38px;
     color: var(--header-bkg-color);
 }
 
+.icon-header-color{
+    color: var(--nav-color);
+}
+
+/* ---------- Scroll ---------- */
+
 #scrollToTopButton {
-    display: none; /* Ocultar o botão inicialmente */
-    position: fixed; /* Fixar o botão no canto inferior direito */
+    display: none;
+    position: fixed;
     bottom: 20px;
     right: 20px;
     padding: 10px 20px;
@@ -330,4 +344,14 @@ label[for="themeCheckbox"] {
 
 #scrollToTopButton:hover {
     background-color: #555;
+}
+
+/* ---------- Hr ---------- */
+
+hr{
+    border: none;
+    background-color: var(--nav-color);
+    height: 6px;
+    border-radius: 22px;
+    margin-bottom: 30px;
 }
