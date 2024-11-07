@@ -1,1 +1,1 @@
-Segundo "site" (projeto front-end e back-end)
+Segundo "site" (projeto front-end com consumo de dados '.json')
